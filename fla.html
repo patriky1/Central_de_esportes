@@ -1,53 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>fla</title>
+<html lang="pt-BR">
 
-    <style>
-        *{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-      body {
-        margin-top: 0;
-        background-color: black;
-      }
-      .simbolo {
-        width: 60%;
-        height: 60%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 15%;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flamengo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
 
-      .titulos {
-        
-        margin-top: 7%;
-        margin: 0px;
-        height: 500px;
-        display: flex;
-        justify-content: space-between;
-      }
+    body {
+      background-color: black;
+      color: #fff;
+      line-height: 1.6;
+      font-size: 16px;
+    }
 
-      .texto{
-        margin-left: 1%;
-      }
-    
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
 
-      .jogo {
-        margin: 0px;
-        height: 300px;
-        margin-top: 3%;
-        justify-content: flex-start;
-        display: flex;
-      }
-    </style>
-  </head>
-  <body>
+    .simbolo img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      color: #f5f5f5;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    .titulos {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .titulos .image {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      display: block;
+    }
+
+    .texto {
+      flex: 1;
+    }
+
+    .texto p {
+      margin-bottom: 10px;
+    }
+
+    .jogo {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .jogo img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      display: block;
+    }
+
+    .jogo .texto {
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
     <div class="simbolo">
-      <img class="simbolo" src="./imagens/flamengoescudo.jpg" alt="" />
+      <img src="./imagens/flamengoescudo.jpg" alt="Escudo do Flamengo" />
     </div>
 
     <div>
@@ -61,41 +115,37 @@
     </div>
 
     <div class="titulos">
-      <img class="image" src="./imagens/flamengotitulos.jpg" alt="" />
+      <img class="image" src="./imagens/flamengotitulos.jpg" alt="Títulos do Flamengo" />
 
       <div class="texto">
         <h2>
-          O time rubro negro Flamengo atualamente possui a quantidade de 60
-          titulos que sao eles: <br />
-          <h3>
-            1 Mundial Interclubes - 1981; <br />
-            3 CONMEBOL Libertadores da América (3 títulos) - 1981, 2019 e 2022;
-            <br />
-            1 Copa Mercosul - 1999;<br />
-            1 Copa Ouro Sul-americana - 1996;<br />
-            1 Recopa Sul-Americana - 2020;<br />
-            8 Campeonatos Brasileiros - 1980, 1982, 1983, 1987, 1992, 2009, 2019
-            e 2020;<br />
-            4 Copas do Brasil - 1990, 2006, 2013 e 2022;<br />
-            2 Supercopas do Brasil - 2020 e 2021;<br />
-            37 Campeonatos Cariocas - 1914, 1915, 1920, 1921, 1925, 1927, 1939,
-            1942, 1943, 1944, 1953, 1954, 1955, 1963, 1965, 1972, 1974, 1978,
-            1979, 1979 (especial), 1981, 1986, 1991, 1996, 1999, 2000, 2001,
-            2004, 2007, 2008, 2009, 2011, 2014, 2017, 2019, 2020, 2021 e
-            2024;<br />
-            2 Torneios Rio-São Paulo - 1940 e 1961.<br />
-          </h3>
+          O time rubro-negro Flamengo atualmente possui a quantidade de 60
+          títulos, que são eles:
         </h2>
+        <h3>
+          1 Mundial Interclubes - 1981;<br />
+          3 CONMEBOL Libertadores da América - 1981, 2019 e 2022;<br />
+          1 Copa Mercosul - 1999;<br />
+          1 Copa Ouro Sul-Americana - 1996;<br />
+          1 Recopa Sul-Americana - 2020;<br />
+          8 Campeonatos Brasileiros - 1980, 1982, 1983, 1987, 1992, 2009, 2019 e 2020;<br />
+          4 Copas do Brasil - 1990, 2006, 2013 e 2022;<br />
+          2 Supercopas do Brasil - 2020 e 2021;<br />
+          37 Campeonatos Cariocas - 1914, 1915, 1920, 1921, 1925, 1927, 1939, 1942, 1943, 1944, 1953, 1954, 1955, 1963, 1965, 1972, 1974, 1978, 1979, 1979 (especial), 1981, 1986, 1991, 1996, 1999, 2000, 2001, 2004, 2007, 2008, 2009, 2011, 2014, 2017, 2019, 2020, 2021 e 2024;<br />
+          2 Torneios Rio-São Paulo - 1940 e 1961.<br />
+        </h3>
       </div>
     </div>
 
     <div class="jogo">
-      <img src="./imagens/jogofla.jpg" alt="" />
-    
-<div class="texto">
-    <h2>Mais uma vez o time rubro negro vence uma partida</h2>
-    <h3> O Flamengo vence de 1x0 o Bahia pelo Campeonato da copa do Brasil e avança paras as semi-finais </h3>
-</div>
-</div>
-  </body>
+      <img src="./imagens/jogofla.jpg" alt="Partida do Flamengo" />
+
+      <div class="texto">
+        <h2>Mais uma vez o time rubro-negro vence uma partida</h2>
+        <h3>O Flamengo vence de 1x0 o Bahia pelo Campeonato da Copa do Brasil e avança para as semifinais.</h3>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
