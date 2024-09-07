@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>volei</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .title {
+            background-color: #ffffff;
+            color: white;
+            /* padding: 40px 0; */
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .navegacao ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 15px 0;
+            margin: 0;
+            /*  background-color: rgb(35, 20, 88); */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .navegacao ul li {
+            margin: 0 20px;
+        }
+
+        .dropbtn {
+            background-color: #0a8d61;
+            ;
+            color: white;
+            padding: 10px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropbtn:hover {
+            background-color: #155bb5;
+            transform: translateY(-3px);
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            top: 50px;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .cabecalho {
+            background-image: url(./imagens/campo2.jpg);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .brao {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 3%;
+            border: 1px solid #ccc;
+            padding: 1%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .brao:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .c {
+            margin-left: 2%;
+            text-align: justify;
+            text-decoration: none;
+        }
+
+        .imgcard {
+            max-width: 300px;
+            max-height: 300px;
+
+        }
+
+        .grid {
+            display: flex;
+
+        }
+
+        .especificacao {
+            background-color: goldenrod;
+            color: white;
+            /* padding: 5px;*/
+            display: flex;
+            justify-content: center;
+            font-family: initial;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="title">
+        <a href="início.html"> <img src="./imagens/logoofc.png"></a>
+    </div>
+
+    <div class="navegacao">
+        <ul>
+            <li class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="#">comunidade</a>
+                    <a href="#">comentários</a>
+                    <a href="#">contato</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Times</button>
+                <div class="dropdown-content">
+                    <a href="sao_paulo.html">São Paulo <img class="imgmenu" src="./imagens/sp.png" alt=""></a>
+                    <a href="fla.html">Flamengo <img class="imgmenu" src="./imagens/fla.png" alt=""></a>
+                    <a href="palmeiras.html">Palmeiras <img class="imgmenu" src="./imagens/pal.png" alt=""></a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Esportes</button>
+                <div class="dropdown-content">
+                    <a href="futebol.html">Futebol</a>
+                    <a href="basquete.html">Basquete</a>
+                    <a href="volei.html">Vôlei</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Categorias</button>
+
+                <div class="dropdown-content">
+                    <a href="#">Atletismo</a>
+                    <a href="#">Combate</a>
+                    <a href="#">Paralímpico</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="especificacao">
+        <h1>VOLEI</h1>
+    </div>
+
+
+    <div class="grid">
+
+        <div class="card">
+            <a
+                href="https://ge.globo.com/olimpiadas/noticia/2024/08/27/ze-roberto-comenta-desavenca-com-bernardinho-mas-ressalta-admiracao-e-um-icone.ghtml">
+
+                <div class="brao">
+                    <img class="imgcard" src="./imagens/carrossel-volei.jpg" alt="">
+                    <div class="c">
+                        <h2>Zé Roberto comenta desavença com Bernardinho, mas ressalta admiração: "É um ícone"</h2>
+
+                        <P> Técnico da seleção brasileira feminina de vôlei, José Roberto Guimarães relembrou uma
+                            desevença antiga com Bernardinho, técnico da seleção masculina. Em entrevista ao "CNN
+                            Esportes S/A" no último domingo, Zé Roberto comentou o atrito, mas ressaltou o respeito e a
+                            admiração mútua entre os dois treinadores com maior número de medalhas em Olimpíadas.
+                        </P>
+
+                    </div>
+                </div>
+            </a>
+
+            <div class="card">
+                <a
+                    href="https://ge.globo.com/sp/santos-e-regiao/volei/noticia/2024/08/31/com-ginasio-lotado-praia-grande-vence-santo-andre-e-faz-historia-pelo-paulista-de-volei.ghtml">
+
+
+                    <div class="brao">
+                        <img class="imgcard" src="./imagens/praiagrande.jpg" alt="">
+                        <div class="c">
+                            <h2>Com ginásio lotado, Praia Grande vence Santo André e faz história pelo Paulista de Vôlei
+                            </h2>
+
+                            <P> Com mais de 2 mil torcedores presentes no ginásio Falcão, Praia Grande conquistou a
+                                segunda vitória consecutiva no Campeonato Paulista de Vôlei - Divisão Especial.
+
+                                O elenco praia-grandense venceu o Super Vôlei Santo André, de virada, por 3 sets a 1
+                                (22/25, 26/16, 25/14 e 25/11), na noite de sexta-feira (30), em partida válida pela
+                                terceira rodada da primeira fase.
+                            </P>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <a
+                    href="https://ge.globo.com/volei-de-praia/noticia/2024/08/25/thamela-e-victoria-levam-o-bronze-na-etapa-de-hamburgo-do-circuito-mundial.ghtml">
+
+
+                    <div class="brao">
+
+                        <img class="imgcard" src="./imagens/olimpiadasvolei.jpg" alt="">
+                        <div class="c">
+
+
+                            <h2>Thamela e Victória levam o bronze na etapa de Hamburgo do Circuito Mundial</h2>
+
+                            <P>O Brasil subiu no pódio da etapa de Hamburgo do Circuito Mundial de Vôlei de Praia. Na
+                                tarde deste domingo, Thamela e Victória conquistaram o bronze ao baterem as italianas
+                                Gottardi e Menegatti na disputa do terceiro lugar. A medalha foi obtida com uma vitória
+                                por 2 sets a 0 (21/19 e 21/19).
+
+                            </P>
+
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+
+            <div class="card">
+                <a
+                    href="https://ge.globo.com/sp/tem-esporte/volei/noticia/2024/08/23/darlan-e-bergmann-viajam-para-reedicao-da-final-da-superliga-e-vao-estrear-na-temporada.ghtml">
+
+
+                    <div class="brao">
+
+                        <img class="imgcard" src="./imagens/superliga.jpg" alt="">
+                        <div class="c">
+
+
+                            <h2>Darlan e Bergmann viajam para reedição da final da Superliga e vão estrear na temporada
+                            </h2>
+
+                            <P> Campeões da Superliga pelo Sesi-Bauru, jogadores foram poupados da 1ª rodada do Paulista
+                                de vôlei após a disputa das Olimpíadas e retornam neste sábado no duelo contra o
+                                Campinas </P>
+
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+</body>
+
+</body>
+
+</html>

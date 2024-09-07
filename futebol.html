@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /*
+        html :-webkit-scrollbar {
+            width: 10px;
+        }
+
+        html :-webkit-scrollbar-thumb {
+            border-radius: 50px;
+            background: #6e6ea9;
+        }
+
+        html :-webkit-scrollbar-track {
+            background: #ededed;
+        }
+
+        .body {
+            text-decoration: none;
+        }
+UMA TENTATIVA DE ESTILIZAR A BARRA DE ROLAGEM*/
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        .title {
+            background-color: #ffffff;
+            color: white;
+            /* padding: 40px 0; */
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .navegacao ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 15px 0;
+            margin: 0;
+            /*  background-color: rgb(35, 20, 88); */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .navegacao ul li {
+            margin: 0 20px;
+        }
+
+        .dropbtn {
+            background-color: #0a8d61;
+            ;
+            color: white;
+            padding: 10px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropbtn:hover {
+            background-color: #155bb5;
+            transform: translateY(-3px);
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            top: 50px;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .cabecalho {
+            background-image: url(./imagens/campo2.jpg);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .brao {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 3%;
+            border: 1px solid #ccc;
+            padding: 1%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .brao:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .c {
+            margin-left: 2%;
+            text-align: justify;
+            text-decoration: none;
+        }
+
+        .imgcard {
+            max-width: 300px;
+            max-height: 300px;
+
+        }
+
+        .grid {
+            display: flex;
+
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .especificacao {
+            background-color: mediumseagreen;
+            color: white;
+            /*padding: 5px;*/
+            display: flex;
+            justify-content: center;
+            font-family: initial;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="title">
+        <a href="início.html"> <img src="./imagens/logoofc.png"></a>
+
+    </div>
+
+    <div class="navegacao">
+        <ul>
+            <li class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="#">comunidade</a>
+                    <a href="#">comentários</a>
+                    <a href="#">contato</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Times</button>
+                <div class="dropdown-content">
+                    <a href="sao_paulo.html">São Paulo <img class="imgmenu" src="./imagens/sp.png" alt=""></a>
+                    <a href="fla.html">Flamengo <img class="imgmenu" src="./imagens/fla.png" alt=""></a>
+                    <a href="palmeiras.html">Palmeiras <img class="imgmenu" src="./imagens/pal.png" alt=""></a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Esportes</button>
+                <div class="dropdown-content">
+                    <a href="futebol.html">Futebol</a>
+                    <a href="basquete.html">Basquete</a>
+                    <a href="volei.html">Vôlei</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Categorias</button>
+                <div class="dropdown-content">
+                    <a href="#">Atletismo</a>
+                    <a href="#">Combate</a>
+                    <a href="#">Paralímpico</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="especificacao">
+        <h1>FUTEBOL</h1>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <a
+                href="https://cidadaoconsumidor.com.br/resultados-dos-jogos-do-brasileirao-serie-a-saiba-todos-os-placares-da-1a-rodada/">
+
+
+                <div class="brao">
+                    <img class="imgcard" src="./imagens/brasileirao.jpg" alt="">
+                    <div class="c">
+                        <h2>Resultados dos jogos do Brasileirão Série A:</h2>
+
+                        <P> Em um jogo repleto de polêmicas, o Flamengo bateu o Atlético-GO por 2 a 1, neste domingo
+                            (14),
+                            no
+                            estádio Serra Dourada, em Goiânia<br>
+                            e largou bem no Campeonato Brasileiro de 2024. De La Cruz e Pedro fizeram os gols do
+                            Rubro-Negro
+                            carioca, enquanto Luiz Fernando marcou para o Dragão, que terminou <br>
+                            o jogo com dois jogadores e o técnico Jair Ventura expulsos.
+                        </P>
+
+                    </div>
+                </div>
+            </a>
+
+            <div class="card">
+                <a href="https://ge.globo.com/pb/futebol/campeonato-paraibano/jogo/06-04-2024/sousa-botafogo-pb.ghtml">
+
+
+                    <div class="brao">
+                        <img class="imgcard" src="./imagens/sousaec.jpg" alt="">
+                        <div class="c">
+                            <h2>VAI FICAR TUDO PARA O ALMEIDÃO!</h2>
+
+                            <P> Sousa e Botafogo-PB ficaram frente a frente na tarde deste sábado pelo primeiro jogo da
+                                final do
+                                Campeonato Paraibano Unipê 2024. A partida,
+                                que aconteceu no Estádio Marizão, em Sousa, foi truncada, estudada e faltosa e, muito
+                                por
+                                isso,
+                                o placar permaneceu inalterado durante todos os 90 minutos de
+                                jogo.<br> A parada agora vai ser decidida no Almeidão, no próximo sábado, quando a
+                                Paraíba
+                                conhecerá
+                                o grande campeão do estado em 2024.
+                            </P>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <a
+                    href="https://ge.globo.com/futebol/futebol-internacional/noticia/2024/08/30/resumao-da-janela-na-europa-premier-league-puxa-o-freio-mas-gastos-passam-de-r-322-bilhoes.ghtml">
+
+
+                    <div class="brao">
+
+                        <img class="imgcard" src="./imagens/tartaruga.jpg" alt="">
+                        <div class="c">
+
+
+                            <h2>Premier League puxa o freio, mas gastos passam de R$ 32,2 bilhões</h2>
+
+                            <P> Chelsea é de novo o clube que mais investe em contratações, e Serie A da Itália
+                                ultrapassa <br>
+                                um bilhão de euros; confira os principais destaques do mercado da bola do verão 2024
+                            </P>
+
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+
+            <div class="card">
+                <a
+                    href="https://ge.globo.com/pi/futebol/noticia/2024/07/01/artilheiro-de-2024-pedro-do-flamengo-atinge-quase-70percent-de-todos-gols-marcados-no-ultimo-ano.ghtml">
+
+
+                    <div class="brao">
+
+                        <img class="imgcard" src="./imagens/pedro.jpg" alt="">
+                        <div class="c">
+
+
+                            <h2>Artilheiro de 2024, Pedro, do Flamengo, atinge quase 70% de todos gols marcados no
+                                último ano</h2>
+
+                            <P> Pedro, do Flamengo, conseguiu marcar até o momento, em 32 jogos disputados, 68,57% de
+                                todos os gols que foram marcados por <br>
+                                ele mesmo em 2023. O atacante rubro-negro balançou as redes em 24 oportunidades nesta
+                                temporada, contra 35 gols no ano passado. </P>
+
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basquete</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .title {
+            background-color: #ffffff;
+            color: white;
+            /* padding: 40px 0; */
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .navegacao ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 15px 0;
+            margin: 0;
+            /*  background-color: rgb(35, 20, 88); */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .navegacao ul li {
+            margin: 0 20px;
+        }
+
+        .dropbtn {
+            background-color: #0a8d61;
+            ;
+            color: white;
+            padding: 10px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropbtn:hover {
+            background-color: #155bb5;
+            transform: translateY(-3px);
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            top: 50px;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .cabecalho {
+            background-image: url(./imagens/campo2.jpg);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .brao {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 3%;
+            border: 1px solid #ccc;
+            padding: 1%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .brao:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .c {
+            margin-left: 2%;
+            text-align: justify;
+            text-decoration: none;
+        }
+
+        .imgcard {
+            max-width: 300px;
+            max-height: 300px;
+
+        }
+
+        .grid {
+            display: flex;
+
+        }
+
+        .especificacao {
+            background-color: orangered;
+            color: white;
+            /*  padding: 5px;*/
+            display: flex;
+            justify-content: center;
+            font-family: initial;
+            margin-top: 0%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="title">
+        <a href="início.html"> <img src="./imagens/logoofc.png"></a>
+    </div>
+
+    <div class="navegacao">
+        <ul>
+            <li class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="#">comunidade</a>
+                    <a href="#">comentários</a>
+                    <a href="#">contato</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Times</button>
+                <div class="dropdown-content">
+                    <a href="sao_paulo.html">São Paulo <img class="imgmenu" src="./imagens/sp.png" alt=""></a>
+                    <a href="fla.html">Flamengo <img class="imgmenu" src="./imagens/fla.png" alt=""></a>
+                    <a href="palmeiras.html">Palmeiras <img class="imgmenu" src="./imagens/pal.png" alt=""></a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Esportes</button>
+                <div class="dropdown-content">
+                    <a href="futebol.html">Futebol</a>
+                    <a href="basquete.html">Basquete</a>
+                    <a href="#">Vôlei</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Categorias</button>
+                <div class="dropdown-content">
+                    <a href="#">Atletismo</a>
+                    <a href="#">Combate</a>
+                    <a href="#">Paralímpico</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="especificacao">
+        <h1>BASQUETE</h1>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <a
+                href="https://ge.globo.com/basquete/noticia/veja-lista-completa-de-campeoes-do-nbb-da-taca-brasil-e-do-campeonato-brasileiro-de-basquete.ghtml">
+
+                <div class="brao">
+                    <img class="imgcard" src="./imagens/basq1.jpg" alt="">
+                    <div class="c">
+                        <h2>Veja lista dos campeões do NBB, Taça Brasil e Campeonato Brasileiro de basquete</h2>
+
+                        <P>Desde o surgimento, em 1965, o campeonato brasileiro de basquete ajudou a aproximar o público
+                            brasileiro ao <br>
+                            esporte da bola laranja. Nesse período, muitas mudanças aconteceram no torneio. Foram três
+                            nomes diferentes, até o estabelecimento <br>
+                            como o atual NBB. Confira a lista completa de campeões nacionais de basquete:
+
+                        </P>
+
+                    </div>
+                </div>
+            </a>
+
+            <div class="card">
+                <a
+                    href="https://ge.globo.com/sp/santos-e-regiao/basquete/noticia/2024/08/31/santos-atropela-diadema-e-reassume-a-lideranca-do-paulista-de-basquete-serie-a-1.ghtml">
+
+
+                    <div class="brao">
+                        <img class="imgcard" src="./imagens/Basquete-Santos.jpg" alt="">
+                        <div class="c">
+                            <h2>Santos atropela Diadema e reassume a liderança do Paulista de Basquete Série A-1</h2>
+
+                            <P> O Santos/Fupes/BlueMed/Instituto de Rosis venceu FR Diadema pela quinta rodada do
+                                Campeonato Paulista Série A-1 de Basquete 2024.
+                                A partida realizada nesta sexta-feira (30), na Arena Santos, foi de domínio total dos
+                                donos da casa que "atropelaram" os visitantes por uma diferença de 40 pontos: 101 a 61.
+
+                            </P>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <a
+                    href="https://ge.globo.com/basquete/nba/noticia/2024/08/29/lebron-proibe-bronny-de-chama-lo-de-pai-nos-lakers-e-brinca-pode-me-chamar-de-goat.ghtml">
+
+
+                    <div class="brao">
+
+                        <img class="imgcard" src="./imagens/bst3.jpg" alt="">
+                        <div class="c">
+
+
+                            <h2>LeBron proíbe Bronny de chamá-lo de pai nos Lakers e brinca: "Pode me chamar de GOAT"
+                            </h2>
+
+                            <P> LeBron surpreendeu ao falar que proibiu Bronny de chamá-lo de pai durante os treinos e
+                                jogos dos Lakers. Em entrevista a um podcast na última quarta-feira, LeBron falou que
+                                ele e o filho terão que fazer alguns "ajustes" na relação. Pela primeira vez na história
+                                da NBA, pai e filho jogarão juntos em uma mesma equipe na temporada, mas o astro optou
+                                por não demonstrar isso dentro de quadra. </P>
+
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+
+            <div class="card">
+                <a
+                    href="https://ge.globo.com/sp/vale-do-paraiba-regiao/basquete/noticia/2024/09/01/sao-jose-tenta-carimbar-vaga-nos-playoffs-do-paulista-de-basquete-em-duelo-contra-o-sao-paulo.ghtml">
+
+                    <div class="brao">
+
+                        <img class="imgcard" src="./imagens/saojosebst.jpg" alt="">
+                        <div class="c">
+
+
+                            <h2>São José tenta carimbar vaga nos playoffs do Paulista de Basquete em duelo contra o São
+                                Paulo</h2>
+
+                            <P> O São José encara o São Paulo neste domingo, 1, pela última rodada da primeira fase do
+                                Campeonato Paulista de Basquete. O jogo começa às 18h, no ginásio Linneu de Moura, em
+                                São José dos Campos. A entrada é gratuita e o ingresso pode ser reservado no aplicativo
+                                oficial do São José Basketball. Os portões abrem 16h30. </P>
+
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+</body>
+
+</html>
